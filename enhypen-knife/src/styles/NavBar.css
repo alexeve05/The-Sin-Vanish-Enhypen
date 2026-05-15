@@ -1,0 +1,77 @@
+.navbar {
+  position: fixed;
+  top: 20px;
+  width: auto;
+  left: 25px;
+  z-index: 100;
+}
+.menu-button {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid silver;
+  color: white;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.menu-button:hover {
+  color: red;
+  border-color: red;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+.menu-panel.open {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-panel {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 420px;
+  background: rgba(0, 0, 0, 0.88);
+  padding: 2rem;
+  border: 1px solid silver;
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  transition: 0.3s ease;
+  min-height: 140px;
+}
+.menu-item:hover {
+  color: red;
+  border-color: red;
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+.menu-item img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.menu-item span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
