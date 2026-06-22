@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 import chainIcon from "../assets/icons/chrome_silver_chain_icon.png";
 import fangsIcon from "../assets/icons/chrome_silver_fangs_icon.png";
@@ -12,31 +13,29 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="navbar">
-{/* menu button */}
       <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
-{/* dropdown menu */}
       <div className={`menu-panel ${menuOpen ? "open" : ""}`}>
-        <a href="/album" className="menu-item">
+        <Link to="/album" className="menu-item">
           <img src={chainIcon} alt="chain icon" />
-          <span>Album World</span></a>
-        <a href="/tracks" className="menu-item">
+          <span>Album World</span></Link>
+        <Link to="/tracks" className="menu-item">
           <img src={fangsIcon} alt="fangs icon" />
-          <span>Tracklist</span></a>
-        <a href="/quiz" className="menu-item">
+          <span>Tracklist</span></Link>
+        <Link to="/quiz" className="menu-item">
           <img src={starIcon} alt="star icon" />
-          <span>Quiz</span></a>
-        <a href="/members" className="menu-item">
+          <span>Quiz</span></Link>
+        <Link to="/members" className="menu-item">
         <img src={personIcon} alt="person icon"/>
-        <span>Members</span></a>
-        <a href="/media-hub" className="menu-item">
+        <span>Members</span></Link>
+        <Link to="/media-hub" className="menu-item">
         <img src={knifeIcon} alt="knife icon"/>
-        <span>Media Hub</span></a>
-        <a href="/mini-game" className="menu-item">
+        <span>Media Hub</span></Link>
+        <Link to="/mini-game" className="menu-item">
         <img src={lighterIcon} alt="lighter icon"/>
-        <span>Mini Game</span></a>
-        <a href="/stream" className="menu-item">
+        <span>Mini Game</span></Link>
+        <Link to="/stream" className="menu-item">
         <img src={musicIcon} alt="music note icon"/>
-        <span>Streaming</span></a>
+        <span>Streaming</span></Link>
       </div>
     </nav>
   );

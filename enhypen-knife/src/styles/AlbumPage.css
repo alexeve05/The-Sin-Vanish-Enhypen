@@ -1,0 +1,92 @@
+.album-page {
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-family: "Special Elite", cursive;
+    overflow-x: hidden;
+}
+.album-hero {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    text-align: center;
+}
+.album-title {
+    width: 420px;
+    max-width: 85%;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.35));
+}
+.enhypen-title {
+    width: 180px;
+    max-width: 50%;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.35));
+}
+.case-subtitle {
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 1rem;
+}
+.case-file-container {
+    width: 100%;
+    padding: 4rem 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-image: url("../assets/background/file.png");
+}
+.case-section {
+    position: relative;
+    background-color: #b89d76;
+    border: 2px solid rgba(0,0,0,0.4);
+    padding: 4rem 3rem 3rem 3rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    transform: rotate(-0.5deg);
+}
+.case-label {
+    position: absolute;
+    top: -18px;
+    left: 30px;
+    background-color: #6e1d1d;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.case-paper {
+    background-color: #ede3cf;
+    color: #1a1a1a;
+    padding: 3rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    line-height: 2;
+    font-size: 1rem;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.08);
+}
+.case-paper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/background/paper_texture.png");
+    background-size: cover;
+    opacity: 0.08;
+    pointer-events: none;
+}
+.case-paper p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 1px rgba(0,0,0,0.15);
+}
+.album-footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.9rem;
+}

@@ -1,10 +1,10 @@
 import NavBar from "../components/NavBar";
 import albumText from "../assets/text/the_sin_vanish_text.png";
 import enhypenText from "../assets/text/enhypen_text.png";
-import "../styles/TracklistPage.css";
-function TracklistPage() {
+import "../styles/MiniGamePage.css";
+function MiniGamePage() {
     return (
-        <div className="tracklist-page">
+        <div className="minigame-page">
             <NavBar />
             <section className="album-hero">
                 <img src={albumText} alt="The Sin: Vanish" className="album-title" />
@@ -13,4 +13,4 @@ function TracklistPage() {
         </div>
     );
 }
-export default TracklistPage;
+export default MiniGamePage;
