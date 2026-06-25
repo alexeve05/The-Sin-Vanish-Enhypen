@@ -1,0 +1,93 @@
+.tracklist-page {
+    min-height: 100vh;
+    background: #050505;
+    color: white;
+    font-family: "Courier New", monospace;
+}
+.tracklist-header {
+    text-align: center;
+    margin: 3rem auto;
+}
+.tracklist-header h1 {
+    font-size: 2.5rem;
+    color: #ff3434;
+    letter-spacing: 3px;
+}
+.tracklist-header p {
+    color: #a9a9a9;
+}
+.desktop-grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.desktop-folder {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+}
+.desktop-folder:hover {
+    transform: translateY(-6px);
+}
+.folder-icon {
+    font-size: 5rem;
+}
+.desktop-folder span {
+    margin-top: .5rem;
+    text-align: center;
+}
+.file-window {
+    width: 85%;
+    margin: 4rem auto;
+    border: 2px solid #444;
+    background: #111;
+    box-shadow: 0 0 30px rgba(255,0,0,.2);
+}
+.window-topbar {
+    background: #222;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+    font-size: .9rem;
+}
+.window-content {
+    padding: 2rem;
+}
+.window-content h2 {
+    color: #ff4444;
+    margin-bottom: 1rem;
+}
+.audio-player {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.evidence-section {
+    margin-bottom: 2rem;
+}
+.evidence-section h3 {
+    color: #ccc;
+    margin-bottom: .75rem;
+}
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+.evidence-tag {
+    padding: .4rem .8rem;
+    border: 1px solid red;
+    color: #ff5757;
+    background: rgba(255,0,0,.08);
+}
+.analysis-credit {
+    text-align: center;
+    color: #777;
+    padding: 4rem 2rem;
+    font-size: .85rem;
+}
