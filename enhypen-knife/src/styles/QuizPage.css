@@ -1,0 +1,78 @@
+.quiz-page{
+    min-height: 100vh;
+    background: #050505;
+    color: white;
+    font-family: "Inter";
+}
+.quiz-header{
+    text-align: center;
+    margin: 3rem;
+}
+.quiz-header h1{
+    font-size: 2.7rem;
+    color: #C21818;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.quiz-header p{
+    color: #b7b7b7;
+}
+.quiz-card{
+    width: min(850px, 90%);
+    margin: 3rem;
+    padding: 3rem;
+    background: #111111;
+    border: 1px solid #444444;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.15);
+}
+.progress{
+    margin-bottom: 2rem;
+    color: #888888;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+}
+.quiz-card h2{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+.answer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.answer-grid button{
+    padding: 1rem;
+    background: #1c1c1c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+.answer-grid button:hover{
+    background: #941515;
+    border-color: red;
+    transform: translateY(-2px);
+}
+.result-card{
+    width: min(700px, 90%);
+    margin: 4rem;
+    padding: 3rem;
+    text-align: center;
+    background: #111111;
+    border: 2px solid red;
+}
+.result-card h1{
+    font-size: 3rem;
+    margin: 2rem;
+    color: #ff3434;
+}
+.result-card button{
+    padding: 1rem;
+    background: #222222;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.result-card button:hover{
+    background: #991717;
+}

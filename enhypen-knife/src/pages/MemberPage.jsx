@@ -24,7 +24,7 @@ function MemberPage() {
             image: jungwon,
             birthDate: "February 9, 2004",
             role: "Leader, Main Vocalist, Lead Dancer",
-            favoriteSong: "Bad Desire",
+            mbti: "ISTJ",
             fileNumber: "001"
         },
         {
@@ -32,7 +32,7 @@ function MemberPage() {
             image: heeseung,
             birthday: "October 15, 2001",
             role: "Main Vocalist",
-            favoriteSong: "Loose",
+            mbti: "ISTP",
             fileNumber: "002"
         },
         {
@@ -40,7 +40,7 @@ function MemberPage() {
             image: jay,
             birthday: "April 20, 2002",
             role: "Rapper, Vocalist",
-            favoriteSong: "Helium",
+            mbti: "ENTJ",
             fileNumber: "003"
         },
         {
@@ -48,7 +48,7 @@ function MemberPage() {
             image: jake,
             birthday: "November 15, 2002",
             role: "Vocalist",
-            favoriteSong: "Outside",
+            mbti: "ISTJ",
             fileNumber: "004"
         },
         {
@@ -56,7 +56,7 @@ function MemberPage() {
             image: sunghoon,
             birthday: "December 8, 2002",
             role: "Vocalist",
-            favoriteSong: "Bad Desire",
+            mbti: "ISTJ",
             fileNumber: "005"
         },
         {
@@ -64,7 +64,7 @@ function MemberPage() {
             image: sunoo,
             birthday: "June 24, 2003",
             role: "Vocalist",
-            favoriteSong: "Flashover",
+            mbti: "ENFP",
             fileNumber: "006"
         },
         {
@@ -72,7 +72,7 @@ function MemberPage() {
             image: niki,
             birthday: "December 9, 2005",
             role: "Main Dancer",
-            favoriteSong: "Helium",
+            mbti: "INTJ",
             fileNumber: "007"
         }
     ];
@@ -103,7 +103,7 @@ function MemberPage() {
                                     <p><strong>File:</strong>{" "} #{member.fileNumber} </p>
                                     <p><strong>DOB:</strong>{" "} {member.birthDate} </p>
                                     <p><strong>Role:</strong>{" "} {member.role} </p>
-                                    <p><strong>Favorite Track:</strong><br /> {member.favoriteSong} </p>
+                                    <p><strong>Favorite Track:</strong><br /> {member.mbti} </p>
                                 </div>
                             </div>
                         </div>

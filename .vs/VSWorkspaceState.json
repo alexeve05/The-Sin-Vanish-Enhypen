@@ -3,9 +3,10 @@
     "",
     "\\enhypen-knife",
     "\\enhypen-knife\\src",
-    "\\enhypen-knife\\src\\assets",
-    "\\enhypen-knife\\src\\assets\\members",
+    "\\enhypen-knife\\src\\components",
+    "\\enhypen-knife\\src\\pages",
     "\\enhypen-knife\\src\\styles"
   ],
+  "SelectedNode": "\\enhypen-knife\\src\\styles\\QuizPage.css",
   "PreviewInSolutionExplorer": false
 }

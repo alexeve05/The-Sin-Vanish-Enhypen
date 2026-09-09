@@ -10,6 +10,11 @@ function QuizPage() {
                 <img src={albumText} alt="The Sin: Vanish" className="album-title" />
                 <img src={enhypenText} alt="ENHYPEN" className="enhypen-title" />
             </section>
+            <section className="quiz-header">
+                <h1>Psychological Evaluation</h1>
+                <p>Complete the behavioral assessment to determine which recovered audio file best matches your profile.</p>
+            </section>
+            <Quiz />
         </div>
     );
 }
